@@ -26,9 +26,7 @@ Going beyond simple verification, **CiteScan** used rule-based algorithms to ana
 ![Citation](assets/screenshot_semantic_scholar.png)
 
 
-### Understanding Mismatches
-
-*False positive cases* occur for CiteScan:
+### *Case Study for False Positive*
 
 1.  **Authors Mismatch**:
     - *Reason*: Different databases deal with a longer list of  authors with different strategies, like truncation.
