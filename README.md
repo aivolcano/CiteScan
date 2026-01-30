@@ -1,4 +1,4 @@
-We deploy the model on ModelScope[https://www.modelscope.cn/studios/aivolcano/CiteScanning/summary] and Hugging Face{}
+We deploy the model on ModelScope[https://www.modelscope.cn/studios/aivolcano/CiteScanning/summary].
 
 # CiteScan: Check References, Confirm Truth.
 
@@ -60,21 +60,6 @@ docker-compose up -d
 
 - **🔌 RESTful API**: Production-ready API for integration with other tools and services.
 
-## ✨ Features
-
-### Web Interface (Gradio)
-- User-friendly interface for manual verification
-- Real-time progress tracking
-- Interactive filtering by verification status
-- Visual presentation of results
-
-### API Service (FastAPI)
-- RESTful API for programmatic access
-- Automatic OpenAPI documentation
-- JSON responses for easy integration
-- Health checks and monitoring endpoints
-- Structured logging
-- Caching for improved performance
 
 ## 🔍 References Validation
 
@@ -151,24 +136,6 @@ LOG_FORMAT=json
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for complete configuration guide.
 
-## 🏗️ Architecture
-
-```
-CiteScan/
-├── src/
-│   ├── api/              # FastAPI routes and schemas
-│   ├── services/         # Business logic layer
-│   ├── core/             # Configuration, logging, cache
-│   ├── fetchers/         # Database API clients
-│   ├── analyzers/        # Metadata comparison
-│   ├── parsers/          # BibTeX parsing
-│   └── utils/            # Utilities
-├── app.py                # Gradio interface
-├── main.py               # FastAPI application
-├── Dockerfile            # Container configuration
-└── docker-compose.yml    # Multi-service setup
-```
-
 ## 🔧 Development
 
 ### Setup Development Environment
@@ -187,14 +154,6 @@ cp .env.example .env
 # Run in development mode
 ENVIRONMENT=development python main.py
 ```
-
-### Project Structure
-
-- **Services Layer**: Reusable business logic
-- **API Layer**: RESTful endpoints with FastAPI
-- **UI Layer**: Gradio interface
-- **Core**: Configuration, logging, caching
-- **Fetchers**: Database API integrations
 
 ## 📊 Monitoring
 
@@ -246,9 +205,6 @@ CiteScan uses multiple data sources:
 - OpenAlex API
 - Google Scholar (web scraping)
 
-## 📝 License
-
-[Add your license here]
 
 ## 🤝 Contributing
 
