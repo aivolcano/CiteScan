@@ -1,13 +1,4 @@
----
-title: CiteScan
-emoji: 📚
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-sdk_version: "4.44.0"
-app_file: app.py
-pinned: false
----
+We deploy the model on ModelScope[https://www.modelscope.cn/studios/aivolcano/CiteScanning/summary] and Hugging Face{}
 
 # CiteScan: Check References, Confirm Truth.
 
