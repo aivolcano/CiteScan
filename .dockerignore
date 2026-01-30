@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Project Specific Outputs
+*.md
+!README.md
+*_only_used_entry.bib
+
+# LaTeX and Bibliography (User Data)
+*.tex
+*.bib
+*.pdf
+*.aux
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# cache
+.cache
+
+# Logs
+logs/
+*.log
+
+# Gradio
+.gradio/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Docker
+.dockerignore

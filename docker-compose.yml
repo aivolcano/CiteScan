@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # FastAPI service
+  api:
+    build: .
+    container_name: citescan-api
+    command: python main.py
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - LOG_LEVEL=INFO
+      - CACHE_ENABLED=true
+    volumes:
+      - ./logs:/app/logs
+      - ./.env:/app/.env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/v1/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Gradio service
+  gradio:
+    build: .
+    container_name: citescan-gradio
+    command: python app.py
+    ports:
+      - "7860:7860"
+    environment:
+      - ENVIRONMENT=development
+      - GRADIO_HOST=0.0.0.0
+      - GRADIO_PORT=7860
+      - LOG_LEVEL=INFO
+      - CACHE_ENABLED=true
+    volumes:
+      - ./logs:/app/logs
+      - ./.env:/app/.env
+    restart: unless-stopped
+    depends_on:
+      - api
+
+networks:
+  default:
+    name: citescan-network
