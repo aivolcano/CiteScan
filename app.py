@@ -576,7 +576,7 @@ with gr.Blocks(title="CiteScan - Check References, Confirm Truth.", theme=gr.the
     btn_total.click(fn=filter_to_total, inputs=[result_state], outputs=[output_html])
 
     gr.Markdown("""
-*False positive cases* occur for CiteScan:
+*Case Study for False positive* in CiteScan:
 
 1.  **Authors Mismatch**:
     - *Reason*: Different databases deal with a longer list of  authors with different strategies, like truncation.
@@ -588,7 +588,7 @@ with gr.Blocks(title="CiteScan - Check References, Confirm Truth.", theme=gr.the
 
 3.  **Year GAP (±1 Year)**:
     - *Reason*: Delay between preprint (arXiv) and final version publication 
-    - *Action*: Verify which version you intend to cite, We recommend you to cite the version from the official press website. Lower pre-print version bib will make your submission more confidence. 
+    - *Action*: Verify which version you intend to cite, We recommend you to cite the version from the official press website. Less number of pre-print version bibs will make your submission more convincing. 
 
 4.  **Non-academic Sources**:
     - *Reason*: Blogs, and APIs are not indexed in academic databases.

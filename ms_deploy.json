@@ -1,0 +1,10 @@
+{
+    "sdk_type": "gradio",
+    "sdk_version": "6.2.0",
+    "resource_configuration": "platform/2v-cpu-16g-mem",
+    "base_image": "ubuntu22.04-py311-torch2.3.1-modelscope1.31.0",
+    "environment_variables": [
+      {"name": "MODEL_NAME", "value": "deepseek-chat"},
+      {"name": "API_KEY", "value": "sk-d7c87a7386d94879a80282cee7bd3f45"}
+    ]
+  }

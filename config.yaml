@@ -1,7 +1,3 @@
-files:
-  bib: "paper.bib"
-  output_dir: "citescan_output"
-
 bibliography:
   check_metadata: true
   check_usage: true
@@ -22,11 +18,6 @@ submission:
   number: true
   citation_quality: true
   anonymization: true
-
-llm:
-  backend: "deepseeek"
-  model: "deepseek-chat"
-  api_key: "sk-d7c87a7386d94879a80282cee7bd3f45"
 
 output:
   quiet: false

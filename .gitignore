@@ -39,7 +39,6 @@ env/
 .LSOverride
 
 # Project Specific Outputs
-*.txt
 *.md
 !README.md
 *_only_used_entry.bib
