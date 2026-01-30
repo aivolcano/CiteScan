@@ -56,7 +56,7 @@ class MetadataComparator:
     
     # Thresholds for matching
     TITLE_THRESHOLD = 0.99
-    AUTHOR_THRESHOLD = 0.65
+    AUTHOR_THRESHOLD = 0.5
     
     def __init__(self):
         self.normalizer = TextNormalizer
