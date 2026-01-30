@@ -1,0 +1,39 @@
+files:
+  bib: "test.bib"
+  output_dir: "test"
+
+bibliography:
+  check_metadata: true
+  check_duplicates: true
+  check_preprint_ratio: true
+  preprint_warning_threshold: 0.50
+
+workflow:
+  - name: arxiv_id
+    enabled: true
+    description: "Lookup by arXiv ID"
+  - name: crossref_doi
+    enabled: true
+    description: "Lookup by DOI"
+  - name: semantic_scholar
+    enabled: true
+    description: "Semantic Scholar API"
+  - name: dblp
+    enabled: true
+    description: "DBLP"
+  - name: openalex
+    enabled: true
+    description: "OpenAlex API"
+  - name: arxiv_title
+    enabled: true
+    description: "Search arXiv by title"
+  - name: crossref_title
+    enabled: true
+    description: "Search CrossRef by title"
+  - name: google_scholar
+    enabled: false
+    description: "Google Scholar (may be rate-limited)"
+
+output:
+  quiet: false
+  minimal_verified: false

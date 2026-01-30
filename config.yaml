@@ -1,0 +1,33 @@
+files:
+  bib: "paper.bib"
+  output_dir: "citescan_output"
+
+bibliography:
+  check_metadata: true
+  check_usage: true
+  check_duplicates: true
+  check_preprint_ratio: true
+  preprint_warning_threshold: 0.50
+  check_relevance: false
+
+submission:
+  caption: true
+  reference: true
+  formatting: true
+  equation: true
+  ai_artifacts: true
+  sentence: true
+  consistency: true
+  acronym: true
+  number: true
+  citation_quality: true
+  anonymization: true
+
+llm:
+  backend: "deepseeek"
+  model: "deepseek-chat"
+  api_key: "sk-d7c87a7386d94879a80282cee7bd3f45"
+
+output:
+  quiet: false
+  minimal_verified: false
