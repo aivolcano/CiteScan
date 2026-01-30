@@ -579,19 +579,19 @@ with gr.Blocks(title="CiteScan - Check References, Confirm Truth.", theme=gr.the
 *Case Study for False positive* in CiteScan:
 
 1.  **Authors Mismatch**:
-    - *Reason*: Different databases deal with a longer list of  authors with different strategies, like truncation.
+    - *Observation*: Different databases deal with a longer list of  authors with different strategies, like truncation.
     - *Action*: Verify if main authors match
 
 2.  **Venues Mismatch**:
-    - *Reason*: Abbreviations vs. full names, such as "ICLR" v.s. "International Conference on Learning Representations"
+    - *Observation*: Abbreviations vs. full names, such as "ICLR" v.s. "International Conference on Learning Representations"
     - *Action*: Both are correct.
 
 3.  **Year GAP (±1 Year)**:
-    - *Reason*: Delay between preprint (arXiv) and final version publication 
+    - *Observation*: Delay between preprint (arXiv) and final version publication 
     - *Action*: Verify which version you intend to cite, We recommend you to cite the version from the official press website. Less number of pre-print version bibs will make your submission more convincing. 
 
 4.  **Non-academic Sources**:
-    - *Reason*: Blogs, and APIs are not indexed in academic databases.
+    - *Observation*: Blogs, and APIs are not indexed in academic databases.
     - *Action*: Verify URL, year, and title manually.
 ---
 **Supported Data Sources:** arXiv, CrossRef, DBLP, Semantic Scholar, ACL Anthology, ACM, theCVF,

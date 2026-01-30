@@ -41,6 +41,7 @@ env/
 # Project Specific Outputs
 *.md
 !README.md
+!docs/**/*.md
 *_only_used_entry.bib
 
 # LaTeX and Bibliography (User Data)
@@ -59,3 +60,6 @@ env/
 
 # cache
 .cache
+
+# Git worktrees
+.worktrees/
