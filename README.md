@@ -189,7 +189,7 @@ tail -f logs/citescan.log | jq '.'
 
 3. **Year GAP (±1 Year)**:
    - *Reason*: Delay between preprint (arXiv) and final version publication
-   - *Action*: Verify which version you intend to cite. We recommend citing the version from the official press website. Lower pre-print version bib will make your submission more convincing.
+   - *Action*: Verify which version you intend to cite. We recommend citing the version from the official press website. Lower ratio of arXiV BibTex will make your paper more convincing.
 
 4. **Non-academic Sources**:
    - *Reason*: Blogs and APIs are not indexed in academic databases.
