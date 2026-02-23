@@ -1,6 +1,18 @@
 We deploy the model on ModelScope[https://www.modelscope.cn/studios/aivolcano/CiteScanning/summary].
 
 # CiteScan: Check References, Confirm Truth.
+Break Free from Secondary Citations with BibTeX Directly from Authoritative Sources
+
+Your research deserves references rooted in original sources. Your tool is no longer a simple format checker—it is:
+
+✅ A Literature Authenticity Verifier – First, it confirms whether the paper exists and who wrote it.
+✅ An Official Citation Generator – Bypassing all intermediate processing, it accesses the original metadata directly from academic databases.
+✅ A Citation Source Purifier – Eliminating formatting errors, missing information, or “hallucinated references” caused by secondary processing from platforms like Google Scholar or arXiv.
+
+This means:
+Before submission—no more doubts from reviewers due to inconsistent citation formats.
+When writing papers—no more tedious verification of full author names or full conference names.
+During literature review—quickly verify whether a “suspicious reference” is authentic.
 
 **CiteScan** is an open-source and free tool designed to detect hallucinated references in academic writing. As AI coding assistants and writing tools become more prevalent, they sometimes generate plausible-sounding citations that do not actually exist. **CiteScan** addresses this issue by validating every bibliography entry against multiple authoritative academic databases—including arXiv, CrossRef, DBLP, Semantic Scholar, OpenAlex, and Google Scholar—to confirm their authenticity.
 
